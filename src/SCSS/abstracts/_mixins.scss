@@ -9,6 +9,9 @@
     width: clamp(300px, 87.2vw, 640px);
     border-radius: 18px;
     position: relative;
+    
+
+   
 
     @media(min-width: $min-width){
         margin-top: 0;
@@ -18,6 +21,13 @@
         width: clamp(200px, 17.708333vw, 640px);
         border-radius: 18px;
         position: relative;
+        transition: transform 0.5s ease;
+        transition: background-position 0.5s ease;
+
+        &:hover {
+            transform: scale(1.1);
+            background-position-x: 95% ;
+        }
     }
 }
 
@@ -28,6 +38,12 @@
     position:absolute;
     bottom: 0;
     border-radius: 15px;
+    
+
+    &:hover {
+        background-color: $clr-neutral-700-hover;
+        cursor: pointer;
+    }
 
     @media(min-width: $min-width) {
         background-color: $clr-neutral-700;

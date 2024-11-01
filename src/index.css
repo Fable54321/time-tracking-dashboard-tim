@@ -102,6 +102,12 @@ button::-moz-focus-inner {
     width: clamp(200px, 17.708333vw, 640px);
     border-radius: 18px;
     position: relative;
+    transition: transform 0.5s ease;
+    transition: background-position 0.5s ease;
+  }
+  .main__article__outside-Work:hover {
+    transform: scale(1.1);
+    background-position-x: 95%;
   }
 }
 .main__article__outside-Play {
@@ -123,6 +129,12 @@ button::-moz-focus-inner {
     width: clamp(200px, 17.708333vw, 640px);
     border-radius: 18px;
     position: relative;
+    transition: transform 0.5s ease;
+    transition: background-position 0.5s ease;
+  }
+  .main__article__outside-Play:hover {
+    transform: scale(1.1);
+    background-position-x: 95%;
   }
 }
 .main__article__outside-Study {
@@ -144,6 +156,12 @@ button::-moz-focus-inner {
     width: clamp(200px, 17.708333vw, 640px);
     border-radius: 18px;
     position: relative;
+    transition: transform 0.5s ease;
+    transition: background-position 0.5s ease;
+  }
+  .main__article__outside-Study:hover {
+    transform: scale(1.1);
+    background-position-x: 95%;
   }
 }
 .main__article__outside-Exercise {
@@ -166,6 +184,12 @@ button::-moz-focus-inner {
     width: clamp(200px, 17.708333vw, 640px);
     border-radius: 18px;
     position: relative;
+    transition: transform 0.5s ease;
+    transition: background-position 0.5s ease;
+  }
+  .main__article__outside-Exercise:hover {
+    transform: scale(1.1);
+    background-position-x: 95%;
   }
 }
 @media (min-width: 57.5em) {
@@ -193,6 +217,12 @@ button::-moz-focus-inner {
     width: clamp(200px, 17.708333vw, 640px);
     border-radius: 18px;
     position: relative;
+    transition: transform 0.5s ease;
+    transition: background-position 0.5s ease;
+  }
+  .main__article__outside-Social:hover {
+    transform: scale(1.1);
+    background-position-x: 95%;
   }
 }
 @media (min-width: 57.5em) {
@@ -220,6 +250,12 @@ button::-moz-focus-inner {
     width: clamp(200px, 17.708333vw, 640px);
     border-radius: 18px;
     position: relative;
+    transition: transform 0.5s ease;
+    transition: background-position 0.5s ease;
+  }
+  .main__article__outside-Self-Care:hover {
+    transform: scale(1.1);
+    background-position-x: 95%;
   }
 }
 .main__article__inside {
@@ -233,6 +269,10 @@ button::-moz-focus-inner {
   position: absolute;
   bottom: 0;
   border-radius: 15px;
+}
+.main__article__inside:hover {
+  background-color: hsl(236, 41%, 34%);
+  cursor: pointer;
 }
 @media (min-width: 57.5em) {
   .main__article__inside {
