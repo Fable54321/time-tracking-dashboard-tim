@@ -1,0 +1,69 @@
+@use "./variables" as *;
+
+
+@mixin outside-background {
+    margin-top: $sz-400;
+    background-repeat: no-repeat;
+    background-position: 231.58px -7px;
+    height: 160px;
+    width: clamp(300px, 87.2vw, 640px);
+    border-radius: 18px;
+    position: relative;
+
+    @media(min-width: $min-width){
+        margin-top: 0;
+        background-repeat: no-repeat;
+        background-position: 159.58px -8px;
+        height: 244px;
+        width: clamp(200px, 17.708333vw, 640px);
+        border-radius: 18px;
+        position: relative;
+    }
+}
+
+@mixin inside-background {
+    background-color: $clr-neutral-700;
+    height: 122px;
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    border-radius: 15px;
+
+    @media(min-width: $min-width) {
+        background-color: $clr-neutral-700;
+        height: 199px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        border-radius: 15px;
+    }
+}
+
+@mixin secondary-header-mobile {
+    color: $clr-neutral-100;
+    font-family: $ff-secondary;
+    font-size: $fs-mobile-500;
+    font-weight: $fw-500;
+
+}
+
+@mixin tertiary-header-mobile {
+    color: $clr-neutral-100;
+    font-family: $ff-secondary;
+    font-size: $fs-mobile-700;
+    font-weight: $fw-300;
+}
+
+@mixin tertiary-header-desktop {
+    color: $clr-neutral-100;
+    font-family: $ff-secondary;
+    font-size: $fs-desktop-700;
+    font-weight: $fw-300;
+}
+
+@mixin extra-info-text {
+    color: $clr-neutral-300;
+    font-family: $ff-secondary;
+    font-size: $fs-mobile-400;
+    font-weight: $fw-400;
+}

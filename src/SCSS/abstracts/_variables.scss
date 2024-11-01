@@ -1,0 +1,64 @@
+
+$clr-neutral-100: hsl(0, 0%, 100%);
+$clr-neutral-200: hsl(236, 100%, 87%);
+$clr-neutral-300: hsl(235, 45%, 61%);
+$clr-neutral-700-hover: hsl(236, 41%, 34%);
+$clr-neutral-700: hsl(235, 46%, 20%);
+$clr-neutral-900: hsl(226, 43%, 10%);
+
+$clr-accent-root: hsl(246, 80%, 60%);
+
+$clr-accent-orange: hsl(15, 100%, 70%);
+$clr-accent-blue: hsl(195, 74%, 62%);
+$clr-accent-red: hsl(348, 100%, 68%);
+$clr-accent-green: hsl(145, 58%, 55%);
+$clr-accent-violet: hsl(264, 64%, 52%);
+$clr-accent-yellow: hsl(43, 84%, 65%);
+
+/*Typos*/
+
+/*---mobile*/
+
+/*-*/ $fs-mobile-400: 0.9375rem;
+/*-*/ $fs-mobile-500: 1.125rem;
+/*-*/ $fs-mobile-600: 1.5rem;
+/*-*/ $fs-mobile-700: 2rem;
+
+
+
+/*---desktop*/
+
+/*-*/ $fs-desktop-400: 0.9375rem;
+/*-*/ $fs-desktop-500: 1.125rem;
+/*-*/ $fs-desktop-600: 2.5rem;
+/*-*/ $fs-desktop-700: 3.5rem;
+
+
+/*---font-family*/
+
+$ff-primary: "Rubik", "sans-serif";
+$ff-secondary: "Rubik", "sans-serif";
+
+/*---font-weights*/
+
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+
+/*Spacings*/
+
+$sz-100: 6px;
+$sz-250: 18px;
+$sz-300: 20px;
+$sz-400: 24px;
+$sz-500: 28px;
+$sz-550: 30px;
+$sz-600: 32px;
+$sz-650: 35px;
+$sz-900: 45px;
+$sz-1200: 64px;
+$sz-1500: 81px;
+
+/*Query*/
+
+$min-width: 57.5em;

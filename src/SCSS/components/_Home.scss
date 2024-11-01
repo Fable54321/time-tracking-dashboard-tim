@@ -1,0 +1,106 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
+
+
+.main__article {
+
+    @media(min-width: $min-width){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: $sz-550;
+    };
+
+    &__outside-Work {
+        background: $clr-accent-orange url('./images/icon-work.svg');
+        @include m.outside-background;
+
+    }
+
+    &__outside-Play {
+        background: $clr-accent-blue url('./images/icon-play.svg');
+        @include m.outside-background;
+    }
+
+    &__outside-Study {
+        background: $clr-accent-red url('./images/icon-study.svg');
+        @include m.outside-background;
+    }
+
+    &__outside-Exercise {
+        background: $clr-accent-green url('./images/icon-exercise.svg');
+        @include m.outside-background;
+        background-position: 231.58px -1px;
+
+        @media(min-width: $min-width){
+            background-position-y:  -1px;
+        }
+    }
+
+    &__outside-Social {
+        background: $clr-accent-violet url('./images/icon-social.svg');
+        @include m.outside-background;
+        background-position: 231.58px -14px;
+
+        @media(min-width: $min-width){
+            background-position-y: -14px;
+        }
+    }
+
+    &__outside-Self-Care {
+        background: $clr-accent-yellow url('./images/icon-self-care.svg');
+        @include m.outside-background;
+        background-position: 231.58px -11px;
+    }
+
+    &__inside {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: $sz-400;
+        @include m.inside-background;
+
+        @media(min-width: $min-width){
+            justify-content: space-between;
+            padding-block: $sz-500 $sz-600;
+        }
+
+
+
+        &__title {
+
+            h2 {
+                @include m.secondary-header-mobile;
+
+                
+            }
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__times {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media(min-width:$min-width){
+                align-items: start;
+                flex-direction: column;
+            }
+
+            h3 {
+                @include m.tertiary-header-mobile;
+
+                @media(min-width: $min-width){
+                    @include m.tertiary-header-desktop;
+                }
+            }
+
+            p {
+                @include m.extra-info-text;
+            }
+        }
+    }
+}

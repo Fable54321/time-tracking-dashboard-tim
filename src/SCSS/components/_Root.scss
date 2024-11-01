@@ -1,0 +1,122 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as m;
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+    @media(min-width: $min-width){
+        flex-direction: row;
+    }
+}
+
+.header {
+
+    &__outside {
+        margin-top: $sz-1500;
+        width: clamp(300px, 87.2vw, 640px);
+        height: 203px;
+        background-color: $clr-neutral-700;
+        border-radius: 18px;
+        position: relative;
+
+        @media(min-width: $min-width){
+            margin-top: 0;
+            width: clamp(200px, 17.708333vw, 640px);
+            height: 518px;
+        }
+
+        &__links {
+            position: absolute;
+            bottom: 0;
+            height: 70px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: $sz-900;
+
+            @media(min-width: $min-width){
+                height: 164px;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: $sz-300;
+                padding-left: $sz-600;
+            }
+
+            button {
+                text-decoration: none;
+                color: $clr-neutral-300;
+                font-family: $ff-secondary;
+                font-size: $fs-mobile-500;
+
+                &:hover {
+                    color: $clr-neutral-100;
+                    cursor: pointer;
+                }
+
+                
+            }
+
+            .btn-active {
+                color: $clr-neutral-100;
+            }
+        }
+    }
+
+    &__inside {
+        background-color: $clr-accent-root;
+        height: 133px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        box-shadow: 0px 3px 5px 1px rgba(0,0,0,.3);   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $sz-300;
+
+        @media(min-width: $min-width){
+            padding: $sz-650 0 0 $sz-550;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: $sz-250;
+            height: 354px;
+        }
+        
+        img{ 
+            width: 64px;
+            height: 64px;
+            border: 3px solid $clr-neutral-100;
+            border-radius: 100vw;
+
+            @media(min-width: $min-width){
+                width: 78px;
+                height: 78px;
+            }
+        }
+
+        h1 {
+            color: $clr-neutral-100;
+            font-family: $ff-primary;
+            font-size: $fs-mobile-600;
+            font-weight: $fw-300;
+
+            @media(min-width: $min-width){
+                font-size: $fs-desktop-600;
+                line-height: 120%;
+            }
+            span{
+                color: $clr-neutral-200;
+                font-size: $fs-mobile-400;
+                font-weight: $fw-400;
+                line-height: 0;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+@use "./SCSS/abstracts/reset";
+@use "./SCSS/abstracts/variables" as *;
+@use "./SCSS/abstracts/mixins" as m;
+@use "./SCSS/components/Home";
+@use "./SCSS/components/Root";
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $clr-neutral-900;
+}
+
+#root {
+    @media(min-width: $min-width){
+        display: flex;
+        gap: $sz-550;
+    }
+}
+
+.hidden-mobile {
+    @media(max-width: $min-width){
+        display: none;
+    }
+}
