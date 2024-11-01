@@ -248,6 +248,7 @@ button::-moz-focus-inner {
   .main__article__inside {
     justify-content: space-between;
     padding-block: 28px 32px;
+    padding-inline: 28px;
   }
 }
 .main__article__inside__title {
@@ -284,6 +285,7 @@ button::-moz-focus-inner {
     font-family: "Rubik", "sans-serif";
     font-size: 3.5rem;
     font-weight: 300;
+    margin-bottom: 5px;
   }
 }
 .main__article__inside__times p {

@@ -63,6 +63,7 @@
         @media(min-width: $min-width){
             justify-content: space-between;
             padding-block: $sz-500 $sz-600;
+            padding-inline: $sz-500;
         }
 
 
@@ -95,7 +96,10 @@
 
                 @media(min-width: $min-width){
                     @include m.tertiary-header-desktop;
+                    margin-bottom: 5px;
                 }
+
+                
             }
 
             p {
