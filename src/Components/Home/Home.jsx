@@ -2,13 +2,16 @@ import { useEffect, useState } from "react";
 import useFetch from "../../functions/useFetch"
 import dots from "../../images/icon-ellipsis.svg"
 import { useOutletContext } from "react-router-dom";
+ 
 
 
 const Home = () => {
 
   const [period] = useOutletContext();
-  const {data, isLoading, error } = useFetch('http://localhost:8000/activities');
+  const {data, isLoading, error } = useFetch('https://jsonkeeper.com/b/TNUX/');
 
+  
+  console.log(data);
  
   const [frequency, setFrequency]= useState('daily');
 
@@ -35,14 +38,14 @@ const Home = () => {
   return (
     <>
       {isLoading && <p>Loading...</p>}
-      {error && <p>Error: {error}</p>}
+      {error && <p style={{color: "lime"}}>Error: {error}</p>}
       {data && (
         <article className="main__article">
           {data.map((activity) => {
             return (
               <div
                 className={"main__article__outside-" + activity.title}
-                key={activity.id}
+                key={activity.title}
               >
                 <div className="main__article__inside">
                   <div className="main__article__inside__title">
@@ -61,5 +64,6 @@ const Home = () => {
     </>
   );
 }
+
 
 export default Home
