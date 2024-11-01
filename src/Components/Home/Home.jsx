@@ -8,7 +8,7 @@ import { useOutletContext } from "react-router-dom";
 const Home = () => {
 
   const [period] = useOutletContext();
-  const {data, isLoading, error } = useFetch('https://jsonkeeper.com/b/TNUX/');
+  const {data, isLoading, error } = useFetch('https://my-json-server.typicode.com/Fable54321/time-tracking-dashboard-tim/activities');
 
   
   console.log(data);
