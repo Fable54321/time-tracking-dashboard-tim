@@ -96,7 +96,7 @@
 
                 @media(min-width: $min-width){
                     @include m.tertiary-header-desktop;
-                    margin-bottom: 5px;
+                   /**last minute fix**/ margin-bottom: 8px;
                 }
 
                 

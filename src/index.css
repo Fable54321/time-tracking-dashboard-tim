@@ -285,7 +285,8 @@ button::-moz-focus-inner {
     font-family: "Rubik", "sans-serif";
     font-size: 3.5rem;
     font-weight: 300;
-    margin-bottom: 5px;
+    /**last minute fix**/
+    margin-bottom: 8px;
   }
 }
 .main__article__inside__times p {
